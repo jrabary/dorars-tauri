@@ -1,0 +1,17 @@
+nodes:
+  - id: gui-node
+    custom:
+      source: target/debug/gui-node
+      outputs:
+        - velocity
+        - direction
+  - id: robot
+    operator:
+      build: cargo build -p op_2
+      shared-library: target/debug/op_2
+      inputs:
+        tick: dora/timer/secs/2
+        velocity: gui-node/velocity
+        direction: gui-node/direction
+      outputs:
+        - position

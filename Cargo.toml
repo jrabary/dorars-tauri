@@ -1,0 +1,2 @@
+[workspace]
+members = ["op_2", "gui-node/src-tauri"]
