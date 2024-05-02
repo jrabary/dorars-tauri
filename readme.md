@@ -1,6 +1,6 @@
 # Dora + Tauri
 
-This is a dora + tauri project proof of concept. It's trying to show how to use dora with a GUI node build with Taur.
+This is a dora + tauri project proof of concept. It's trying to show how to use dora with a GUI node built with Tauri.
 
 
 ## How to build the project
